@@ -16,7 +16,7 @@ public class Main {
         A.setMatrix(aux);
         B.setMatrix(aux);
         
-        Logic.add(A,B).printMatrix();
+        Logic.subtract(A,B).printMatrix();
     }
     
 }
