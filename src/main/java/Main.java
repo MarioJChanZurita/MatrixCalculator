@@ -16,7 +16,7 @@ public class Main {
         A.setMatrix(aux);
         B.setMatrix(aux);
         
-        Logic.subtract(A,B).printMatrix();
+        Logic.scalarMult(A,2).printMatrix();
     }
     
 }

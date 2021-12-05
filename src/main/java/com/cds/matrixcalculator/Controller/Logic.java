@@ -39,8 +39,8 @@ public class Logic {
     
     /**
      * Do a subtraction from the Matrix A -> B
-     * @param A
-     * @param B
+     * @param A A Matrix Object
+     * @param B A Matrix Object
      * @return 
      */
     public static Matrix subtract(Matrix A, Matrix B) {
@@ -63,6 +63,27 @@ public class Logic {
             throw new ArithmeticException("Cannot perform this action.");
         
         }
+        
+    }
+    
+    /**
+     * Perform a scalar multiplication for the matrix A
+     * @param A A Matrix Object
+     * @param scalar A scalar of type double
+     * @return 
+     */
+    public static Matrix scalarMult(Matrix A, double scalar) {
+        
+        Matrix result = new Matrix(A.getRows(), A.getColumns());
+        
+        for (int row = 0; row < result.getRows(); row++) {
+            for (int column = 0; column < result.getColumns(); column++) {
+                double currentCellValue = A.secureGetMatrix()[row][column] * scalar;
+                result.setIndividualMatrix(currentCellValue, row, column);
+            }
+        }
+        
+        return result;
         
     }
     
