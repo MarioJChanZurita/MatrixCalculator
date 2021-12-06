@@ -442,13 +442,5 @@ public class Logic {
         return result;
         
     }
-    
-    
-    //Checar que determinantes distintos a 0 
-    // == 0 infinite solutions los tres
-    // != 0 no solution los tres
-    
-    //Checar determinant con isSquare
-    
-    
+        
 }
