@@ -1,5 +1,6 @@
 import com.cds.matrixcalculator.Controller.Logic;
 import com.cds.matrixcalculator.Model.Matrix;
+import com.cds.matrixcalculator.View.Interface;
 
 /**
  *
@@ -17,6 +18,8 @@ public class Main {
         B.setMatrix(aux);
         
         Logic.scalarMult(A,2).printMatrix();
+        
+        // Interface.initInterface();
     }
     
 }
